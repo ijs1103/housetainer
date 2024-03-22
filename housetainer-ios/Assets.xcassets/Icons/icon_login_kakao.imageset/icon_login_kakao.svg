@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_280" data-name="사각형 280" width="23.168" height="20.376" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_login_kakao" transform="translate(-106 -443)">
+    <circle id="타원_7" data-name="타원 7" cx="30" cy="30" r="30" transform="translate(106 443)" fill="#ffde00"/>
+    <g id="그룹_373" data-name="그룹 373" transform="translate(124.416 462.812)">
+      <g id="그룹_372" data-name="그룹 372" clip-path="url(#clip-path)">
+        <g id="그룹_371" data-name="그룹 371" style="mix-blend-mode: normal;isolation: isolate">
+          <g id="그룹_370" data-name="그룹 370">
+            <g id="그룹_369" data-name="그룹 369" clip-path="url(#clip-path)">
+              <path id="패스_232" data-name="패스 232" d="M11.584,0C5.186,0,0,4.043,0,9.03c0,3.115,2.024,5.862,5.1,7.485l-.569,3.271a.5.5,0,0,0,.838.452L8.13,17.651a14.64,14.64,0,0,0,3.454.408c6.4,0,11.584-4.042,11.584-9.029S17.982,0,11.584,0" fill="#3c1e1e"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

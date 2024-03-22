@@ -1,0 +1,17 @@
+<svg id="icon_main_calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_290" data-name="사각형 290" width="18.315" height="15.684" transform="translate(0 0)" fill="none" stroke="#d55eaa" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_250" data-name="사각형 250" width="22" height="22" fill="#bc5555" opacity="0"/>
+  <g id="그룹_401" data-name="그룹 401" transform="translate(2 3)">
+    <g id="그룹_400" data-name="그룹 400" clip-path="url(#clip-path)">
+      <path id="패스_253" data-name="패스 253" d="M17.815,11.6v2.681a.907.907,0,0,1-.908.907H1.408A.907.907,0,0,1,.5,14.277V2.617a.907.907,0,0,1,.908-.907h15.5a.907.907,0,0,1,.908.907V8.769" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_34" data-name="선 34" x2="17.315" transform="translate(0.5 6.102)" fill="none" stroke="#d55eaa" stroke-width="1"/>
+      <line id="선_35" data-name="선 35" y2="2.365" transform="translate(4.772 0.5)" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_36" data-name="선 36" y2="2.365" transform="translate(13.543 0.5)" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_254" data-name="패스 254" d="M9.6,7.754l.508,1.03a.5.5,0,0,0,.375.272l1.136.165a.5.5,0,0,1,.276.849l-.822.8a.5.5,0,0,0-.143.44l.194,1.132a.5.5,0,0,1-.722.525l-1.017-.534a.493.493,0,0,0-.463,0l-1.016.534a.5.5,0,0,1-.723-.525l.194-1.132a.5.5,0,0,0-.143-.44l-.822-.8a.5.5,0,0,1,.276-.849l1.136-.165A.5.5,0,0,0,8.2,8.784l.508-1.03A.5.5,0,0,1,9.6,7.754Z" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

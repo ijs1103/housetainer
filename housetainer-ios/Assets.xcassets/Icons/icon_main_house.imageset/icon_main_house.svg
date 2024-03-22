@@ -1,0 +1,14 @@
+<svg id="icon_main_house" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.48" height="22" viewBox="0 0 22.48 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_291" data-name="사각형 291" width="21.48" height="17.688" transform="translate(0 0)" fill="none" stroke="#d55eaa" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_251" data-name="사각형 251" width="22" height="22" fill="#bc5555" opacity="0"/>
+  <g id="그룹_403" data-name="그룹 403" transform="translate(1 2)">
+    <g id="그룹_402" data-name="그룹 402" clip-path="url(#clip-path)">
+      <path id="패스_255" data-name="패스 255" d="M17.2,17.188H1.717A1.217,1.217,0,0,1,.5,15.971V6.029a1.217,1.217,0,0,1,.625-1.063L8.868.654a1.217,1.217,0,0,1,1.184,0L17.8,4.966" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_256" data-name="패스 256" d="M18.42,7.512a2.56,2.56,0,0,0-2.256,1.35,2.559,2.559,0,0,0-4.815,1.209s.082,3.061,4.512,5.089c.1.045.2.09.3.133.1-.043.2-.088.3-.133,4.43-2.028,4.511-5.089,4.511-5.089A2.559,2.559,0,0,0,18.42,7.512Z" fill="none" stroke="#d55eaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

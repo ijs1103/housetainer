@@ -1,0 +1,14 @@
+<svg id="icon_pick_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_292" data-name="사각형 292" width="13.445" height="21.177" fill="rgba(116,0,74,0.4)" stroke="#74004a" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_117" data-name="사각형 117" width="26" height="26" fill="#671010" opacity="0"/>
+  <g id="그룹_407" data-name="그룹 407" transform="translate(15.974 1) rotate(45)">
+    <g id="그룹_404" data-name="그룹 404" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="패스_257" data-name="패스 257" d="M10.516,7.855V4.571s2.807.273,2.688-2.185A2.018,2.018,0,0,0,11.172.5H2.535A2.018,2.018,0,0,0,.5,2.385C.384,4.844,3.191,4.571,3.191,4.571V7.855A2.989,2.989,0,0,1,1.87,10.413,2.9,2.9,0,0,0,.509,13.106c.119,1.547,1.513,1.217,3.065,1.217h6.56c1.552,0,2.946.33,3.064-1.217a2.9,2.9,0,0,0-1.36-2.694A2.986,2.986,0,0,1,10.516,7.855Z" transform="translate(-0.132 -0.131)" fill="none" stroke="#74004a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_37" data-name="선 37" y2="6.587" transform="translate(6.722 14.222)" fill="none" stroke="#74004a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

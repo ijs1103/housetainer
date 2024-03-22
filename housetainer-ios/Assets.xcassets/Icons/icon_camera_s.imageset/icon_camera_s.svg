@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="icon_camera_s" transform="translate(-206 -176)">
+    <rect id="사각형_169" data-name="사각형 169" width="36" height="36" transform="translate(206 176)" fill="#d28b8b" opacity="0"/>
+    <g id="타원_22" data-name="타원 22" transform="translate(206 176)" fill="#555" stroke="#fff" stroke-width="2">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17" fill="none"/>
+    </g>
+    <g id="icon_camera" transform="translate(167.667 -479.333)">
+      <rect id="사각형_134" data-name="사각형 134" width="20" height="20" transform="translate(46.333 663.333)" fill="#703636" opacity="0"/>
+      <g id="그룹_134" data-name="그룹 134" transform="translate(48.763 666.806)">
+        <path id="패스_96" data-name="패스 96" d="M2.828,3.215,4.072.983A.7.7,0,0,1,4.763.5H9.641a.7.7,0,0,1,.691.483l1.244,2.231" transform="translate(0.368 -0.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect id="사각형_135" data-name="사각형 135" width="15.141" height="10.34" rx="2" transform="translate(0 2.714)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_97" data-name="패스 97" d="M9.184,6.92A2.493,2.493,0,1,1,6.69,4.426,2.493,2.493,0,0,1,9.184,6.92Z" transform="translate(0.879 0.965)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

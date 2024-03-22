@@ -1,0 +1,30 @@
+<svg id="icon_noface_s" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_15" data-name="타원 15" cx="32" cy="32" r="32" fill="#7876aa"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_111" data-name="사각형 111" width="47.843" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <circle id="타원_13" data-name="타원 13" cx="32" cy="32" r="32" fill="#c8c8c8"/>
+  <g id="그룹_348" data-name="그룹 348">
+    <g id="icon_noface_s-2" data-name="icon_noface_s" clip-path="url(#clip-path)">
+      <g id="그룹_87" data-name="그룹 87" transform="translate(8.078 15)">
+        <g id="그룹_86" data-name="그룹 86" clip-path="url(#clip-path-2)">
+          <path id="패스_88" data-name="패스 88" d="M46.549,40.47c-.752-.752-11.181-5.445-15.315-7.287A3.124,3.124,0,0,1,29.394,30.6a18.979,18.979,0,0,0,5.34-6.2c1.528-.121,3.4-.82,5.044-4.926.9-2.246.2-4.386-2.031-4.85.013-.257.037-.516.037-.768a13.807,13.807,0,0,0-3.236-8.9c1.26-1.57,2.34-2.977,2.439-4.072a.49.49,0,0,0-.679-.485,10.937,10.937,0,0,1-2.345.516A29.5,29.5,0,0,1,28.108.647,13.862,13.862,0,0,0,10.059,13.861c0,.252.024.514.037.768-2.222.472-2.914,2.607-2.018,4.85,1.638,4.093,3.506,4.8,5.031,4.923a18.9,18.9,0,0,0,5.34,6.2,3.124,3.124,0,0,1-1.839,2.578C12.478,35.025,2.046,39.718,1.294,40.47.354,41.411,0,50,0,50H47.843s-.354-8.589-1.294-9.53" transform="translate(0 0)" fill="rgba(255,255,255,0.55)"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_285" data-name="그룹 285" transform="translate(28 32)">
+      <g id="사각형_232" data-name="사각형 232" fill="#fff" stroke="#949494" stroke-width="1">
+        <rect width="2" height="4" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1" height="3" rx="0.5" fill="none"/>
+      </g>
+      <g id="사각형_233" data-name="사각형 233" transform="translate(7)" fill="#fff" stroke="#949494" stroke-width="1">
+        <rect width="2" height="4" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1" height="3" rx="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg id="icon_camera_l" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <rect id="사각형_134" data-name="사각형 134" width="28" height="28" fill="#703636" opacity="0"/>
+  <g id="그룹_134" data-name="그룹 134" transform="translate(2.143 3.143)">
+    <path id="패스_96" data-name="패스 96" d="M2.828,4.623l1.89-3.389A1.06,1.06,0,0,1,5.767.5h7.41a1.06,1.06,0,0,1,1.049.734l1.89,3.389" transform="translate(2.884 0.357)" fill="none" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="사각형_135" data-name="사각형 135" width="22.999" height="15.705" rx="2" transform="translate(0.857 4.98)" fill="none" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="패스_97" data-name="패스 97" d="M11.771,8.214A3.787,3.787,0,1,1,7.984,4.426,3.787,3.787,0,0,1,11.771,8.214Z" transform="translate(4.371 4.619)" fill="none" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

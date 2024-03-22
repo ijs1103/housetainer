@@ -1,0 +1,14 @@
+<svg id="img_house_no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 66 66">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_207" data-name="사각형 207" width="55.085" height="47.334" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_213" data-name="사각형 213" width="66" height="66" fill="#5e2e2e" opacity="0"/>
+  <g id="그룹_237" data-name="그룹 237" transform="translate(5.458 9.333)">
+    <g id="그룹_236" data-name="그룹 236" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="패스_117" data-name="패스 117" d="M55.085,16.08a4.208,4.208,0,0,0-2.3-3.754L29.454.458a4.213,4.213,0,0,0-3.823,0L2.3,12.327A4.208,4.208,0,0,0,0,16.08V43.123a4.21,4.21,0,0,0,4.211,4.211h36.4L55.085,32.861Z" transform="translate(0 -0.003)" fill="#c8c8c8"/>
+      <path id="패스_118" data-name="패스 118" d="M22.642,6.61H12.379a4.21,4.21,0,0,0-4.211,4.211V21.084Z" transform="translate(32.443 26.253)" fill="#949494"/>
+    </g>
+  </g>
+</svg>

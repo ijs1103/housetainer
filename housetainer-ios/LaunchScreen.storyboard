@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_intro" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-gg-1Hv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVU-OX-K4T">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="sVU-qw-BmW" kind="embed" id="V6p-LM-DL1"/>
+                                </connections>
+                            </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo_housetainer" translatesAutoresizingMaskIntoConstraints="NO" id="F3C-bl-qIc">
+                                <rect key="frame" x="75.666666666666686" y="281" width="242" height="80"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글로벌 집초대 커뮤니티" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdM-Lg-4qq">
+                                <rect key="frame" x="123" y="386" width="147" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-zK-7XJ" userLabel="좋은 사람을  연결해드립니다.">
+                                <rect key="frame" x="141" y="424.33333333333331" width="113.33333333333333" height="68"/>
+                                <string key="text">좋은 사람을 
+연결해드립니다.</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Tw-zK-7XJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3aS-pr-vZf"/>
+                            <constraint firstItem="YdM-Lg-4qq" firstAttribute="top" secondItem="F3C-bl-qIc" secondAttribute="bottom" constant="25" id="5ej-bA-1Wn"/>
+                            <constraint firstItem="9Tw-zK-7XJ" firstAttribute="top" secondItem="YdM-Lg-4qq" secondAttribute="bottom" constant="29" id="I17-X4-9Uu"/>
+                            <constraint firstItem="F3C-bl-qIc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JFN-qk-QLk"/>
+                            <constraint firstItem="YdM-Lg-4qq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K7N-Gi-V0E"/>
+                            <constraint firstItem="9Tw-zK-7XJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KaS-u4-bd3"/>
+                            <constraint firstItem="F3C-bl-qIc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="Qa2-mO-G0u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oWK-SU-O0A">
+            <objects>
+                <viewController id="sVU-qw-BmW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NsO-8Z-2mb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yHs-6l-AAF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZj-y7-gHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_intro" width="376" height="646"/>
+        <image name="logo_housetainer" width="242" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

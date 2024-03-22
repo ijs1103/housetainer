@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo_housetainer.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
