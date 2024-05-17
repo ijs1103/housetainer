@@ -1,0 +1,46 @@
+{
+  "schemaNamespace" : "Interstyle",
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "**/*.graphqls"
+    ]
+  },
+  "schemaDownload" : {
+    "downloadMethod": {
+        "introspection": {
+            "endpointURL": "https://tueyrdhxvqocbcatpxdn.supabase.co/graphql/v1",
+            "httpMethod": {
+                "POST": {}
+            },
+            "includeDeprecatedInputValues": false,
+            "outputFormat": "SDL"
+        }
+    },
+    "downloadTimeout": 60,
+    "headers": {
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR1ZXlyZGh4dnFvY2JjYXRweGRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMDgyOTksImV4cCI6MTk5NjY4NDI5OX0.6g2G4JltqqFJQUp7eGHloRowrnKA6SyodY_1P-3DfwY",
+      "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR1ZXlyZGh4dnFvY2JjYXRweGRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMDgyOTksImV4cCI6MTk5NjY4NDI5OX0.6g2G4JltqqFJQUp7eGHloRowrnKA6SyodY_1P-3DfwY"
+    },
+    "outputPath": "./graphql/interstyle.graphqls"
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./Interstyle",
+      "moduleType" : {
+        "swiftPackageManager" : {
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+PODS:
+  - CenteredCollectionView (2.2.2)
+  - naveridlogin-sdk-ios (4.1.6)
+
+DEPENDENCIES:
+  - CenteredCollectionView
+  - naveridlogin-sdk-ios
+
+SPEC REPOS:
+  trunk:
+    - CenteredCollectionView
+    - naveridlogin-sdk-ios
+
+SPEC CHECKSUMS:
+  CenteredCollectionView: a9217908a698c386cbb98af11b596da48900b908
+  naveridlogin-sdk-ios: cdd34e3585a3d5aaf37c1d84c1f41faba4a25d1a
+
+PODFILE CHECKSUM: c19f422eb01ed1ce07ecef4d1f502bd629f0cf48
+
+COCOAPODS: 1.15.2

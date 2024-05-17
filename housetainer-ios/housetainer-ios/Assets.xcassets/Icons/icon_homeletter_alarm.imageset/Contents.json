@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_homeletter_alarm.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

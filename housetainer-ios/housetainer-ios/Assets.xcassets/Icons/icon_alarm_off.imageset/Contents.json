@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_alarm_off.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,1581 @@
+"""A high precision floating point value represented as a string"""
+scalar BigFloat
+
+"""
+Boolean expression comparing fields on type "BigFloat"
+"""
+input BigFloatFilter {
+  eq: BigFloat
+  gt: BigFloat
+  gte: BigFloat
+  in: [BigFloat!]
+  is: FilterIs
+  lt: BigFloat
+  lte: BigFloat
+  neq: BigFloat
+}
+
+"""An arbitrary size integer represented as a string"""
+scalar BigInt
+
+"""
+Boolean expression comparing fields on type "BigInt"
+"""
+input BigIntFilter {
+  eq: BigInt
+  gt: BigInt
+  gte: BigInt
+  in: [BigInt!]
+  is: FilterIs
+  lt: BigInt
+  lte: BigInt
+  neq: BigInt
+}
+
+"""
+Boolean expression comparing fields on type "Boolean"
+"""
+input BooleanFilter {
+  eq: Boolean
+  is: FilterIs
+}
+
+"""
+An opaque string using for tracking a position in results during pagination
+"""
+scalar Cursor
+
+"""A date wihout time information"""
+scalar Date
+
+"""
+Boolean expression comparing fields on type "Date"
+"""
+input DateFilter {
+  eq: Date
+  gt: Date
+  gte: Date
+  in: [Date!]
+  is: FilterIs
+  lt: Date
+  lte: Date
+  neq: Date
+}
+
+"""A date and time"""
+scalar Datetime
+
+"""
+Boolean expression comparing fields on type "Datetime"
+"""
+input DatetimeFilter {
+  eq: Datetime
+  gt: Datetime
+  gte: Datetime
+  in: [Datetime!]
+  is: FilterIs
+  lt: Datetime
+  lte: Datetime
+  neq: Datetime
+}
+
+type event_bookmarks implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  member_id: UUID!
+  event_id: UUID!
+  created_at: Datetime!
+  members: members!
+  events: events!
+}
+
+type event_bookmarksConnection {
+  edges: [event_bookmarksEdge!]!
+  pageInfo: PageInfo!
+}
+
+type event_bookmarksDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_bookmarks!]!
+}
+
+type event_bookmarksEdge {
+  cursor: String!
+  node: event_bookmarks!
+}
+
+input event_bookmarksFilter {
+  member_id: UUIDFilter
+  event_id: UUIDFilter
+  created_at: DatetimeFilter
+  nodeId: IDFilter
+}
+
+input event_bookmarksInsertInput {
+  member_id: UUID
+  event_id: UUID
+  created_at: Datetime
+}
+
+type event_bookmarksInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_bookmarks!]!
+}
+
+input event_bookmarksOrderBy {
+  member_id: OrderByDirection
+  event_id: OrderByDirection
+  created_at: OrderByDirection
+}
+
+input event_bookmarksUpdateInput {
+  member_id: UUID
+  event_id: UUID
+  created_at: Datetime
+}
+
+type event_bookmarksUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_bookmarks!]!
+}
+
+type event_comments implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  id: UUID!
+  event_id: UUID!
+  content: String!
+  created_at: Datetime!
+  updated_at: Datetime!
+  parent_comment_id: UUID
+  writer_id: UUID!
+  event_comments: event_comments
+  members: members!
+  events: events!
+  event_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_commentsOrderBy!]
+  ): event_commentsConnection
+}
+
+type event_commentsConnection {
+  edges: [event_commentsEdge!]!
+  pageInfo: PageInfo!
+}
+
+type event_commentsDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_comments!]!
+}
+
+type event_commentsEdge {
+  cursor: String!
+  node: event_comments!
+}
+
+input event_commentsFilter {
+  id: UUIDFilter
+  event_id: UUIDFilter
+  content: StringFilter
+  created_at: DatetimeFilter
+  updated_at: DatetimeFilter
+  parent_comment_id: UUIDFilter
+  writer_id: UUIDFilter
+  nodeId: IDFilter
+}
+
+input event_commentsInsertInput {
+  id: UUID
+  event_id: UUID
+  content: String
+  created_at: Datetime
+  updated_at: Datetime
+  parent_comment_id: UUID
+  writer_id: UUID
+}
+
+type event_commentsInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_comments!]!
+}
+
+input event_commentsOrderBy {
+  id: OrderByDirection
+  event_id: OrderByDirection
+  content: OrderByDirection
+  created_at: OrderByDirection
+  updated_at: OrderByDirection
+  parent_comment_id: OrderByDirection
+  writer_id: OrderByDirection
+}
+
+input event_commentsUpdateInput {
+  id: UUID
+  event_id: UUID
+  content: String
+  created_at: Datetime
+  updated_at: Datetime
+  parent_comment_id: UUID
+  writer_id: UUID
+}
+
+type event_commentsUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [event_comments!]!
+}
+
+type events implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  id: UUID!
+  created_at: Datetime!
+  title: String!
+  schedule_type: String!
+  member_id: UUID!
+  date: Datetime!
+  detail: String!
+  related_link: String!
+  display_type: String!
+  file_name: String
+  members: members!
+  event_bookmarksCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_bookmarksFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_bookmarksOrderBy!]
+  ): event_bookmarksConnection
+  event_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_commentsOrderBy!]
+  ): event_commentsConnection
+}
+
+type eventsConnection {
+  edges: [eventsEdge!]!
+  pageInfo: PageInfo!
+}
+
+type eventsDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [events!]!
+}
+
+type eventsEdge {
+  cursor: String!
+  node: events!
+}
+
+input eventsFilter {
+  id: UUIDFilter
+  created_at: DatetimeFilter
+  title: StringFilter
+  schedule_type: StringFilter
+  member_id: UUIDFilter
+  date: DatetimeFilter
+  detail: StringFilter
+  related_link: StringFilter
+  display_type: StringFilter
+  file_name: StringFilter
+  nodeId: IDFilter
+}
+
+input eventsInsertInput {
+  id: UUID
+  created_at: Datetime
+  title: String
+  schedule_type: String
+  member_id: UUID
+  date: Datetime
+  detail: String
+  related_link: String
+  display_type: String
+  file_name: String
+}
+
+type eventsInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [events!]!
+}
+
+input eventsOrderBy {
+  id: OrderByDirection
+  created_at: OrderByDirection
+  title: OrderByDirection
+  schedule_type: OrderByDirection
+  member_id: OrderByDirection
+  date: OrderByDirection
+  detail: OrderByDirection
+  related_link: OrderByDirection
+  display_type: OrderByDirection
+  file_name: OrderByDirection
+}
+
+input eventsUpdateInput {
+  id: UUID
+  created_at: Datetime
+  title: String
+  schedule_type: String
+  member_id: UUID
+  date: Datetime
+  detail: String
+  related_link: String
+  display_type: String
+  file_name: String
+}
+
+type eventsUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [events!]!
+}
+
+enum FilterIs {
+  NULL
+  NOT_NULL
+}
+
+"""
+Boolean expression comparing fields on type "Float"
+"""
+input FloatFilter {
+  eq: Float
+  gt: Float
+  gte: Float
+  in: [Float!]
+  is: FilterIs
+  lt: Float
+  lte: Float
+  neq: Float
+}
+
+type house_comments implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  id: UUID!
+  created_at: Datetime!
+  updated_at: Datetime!
+  house_id: UUID!
+  content: String!
+  writer_id: UUID!
+  parent_comment_id: UUID
+  houses: houses!
+  members: members!
+  house_comments: house_comments
+  house_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: house_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [house_commentsOrderBy!]
+  ): house_commentsConnection
+}
+
+type house_commentsConnection {
+  edges: [house_commentsEdge!]!
+  pageInfo: PageInfo!
+}
+
+type house_commentsDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [house_comments!]!
+}
+
+type house_commentsEdge {
+  cursor: String!
+  node: house_comments!
+}
+
+input house_commentsFilter {
+  id: UUIDFilter
+  created_at: DatetimeFilter
+  updated_at: DatetimeFilter
+  house_id: UUIDFilter
+  content: StringFilter
+  writer_id: UUIDFilter
+  parent_comment_id: UUIDFilter
+  nodeId: IDFilter
+}
+
+input house_commentsInsertInput {
+  id: UUID
+  created_at: Datetime
+  updated_at: Datetime
+  house_id: UUID
+  content: String
+  writer_id: UUID
+  parent_comment_id: UUID
+}
+
+type house_commentsInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [house_comments!]!
+}
+
+input house_commentsOrderBy {
+  id: OrderByDirection
+  created_at: OrderByDirection
+  updated_at: OrderByDirection
+  house_id: OrderByDirection
+  content: OrderByDirection
+  writer_id: OrderByDirection
+  parent_comment_id: OrderByDirection
+}
+
+input house_commentsUpdateInput {
+  id: UUID
+  created_at: Datetime
+  updated_at: Datetime
+  house_id: UUID
+  content: String
+  writer_id: UUID
+  parent_comment_id: UUID
+}
+
+type house_commentsUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [house_comments!]!
+}
+
+type houses implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  id: UUID!
+  created_at: Datetime!
+  updated_at: Datetime!
+  owner_id: UUID!
+  name: String!
+  category: String!
+  title: String!
+  content: String!
+  imageURLs: [String]!
+  coverImageIndex: Int!
+  domestic: Boolean!
+  location: String!
+  detailed_location: String!
+  display_type: String
+  members: members!
+  house_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: house_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [house_commentsOrderBy!]
+  ): house_commentsConnection
+}
+
+type housesConnection {
+  edges: [housesEdge!]!
+  pageInfo: PageInfo!
+}
+
+type housesDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [houses!]!
+}
+
+type housesEdge {
+  cursor: String!
+  node: houses!
+}
+
+input housesFilter {
+  id: UUIDFilter
+  created_at: DatetimeFilter
+  updated_at: DatetimeFilter
+  owner_id: UUIDFilter
+  name: StringFilter
+  category: StringFilter
+  title: StringFilter
+  content: StringFilter
+  coverImageIndex: IntFilter
+  domestic: BooleanFilter
+  location: StringFilter
+  detailed_location: StringFilter
+  display_type: StringFilter
+  nodeId: IDFilter
+}
+
+input housesInsertInput {
+  id: UUID
+  created_at: Datetime
+  updated_at: Datetime
+  owner_id: UUID
+  name: String
+  category: String
+  title: String
+  content: String
+  imageURLs: [String]
+  coverImageIndex: Int
+  domestic: Boolean
+  location: String
+  detailed_location: String
+  display_type: String
+}
+
+type housesInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [houses!]!
+}
+
+input housesOrderBy {
+  id: OrderByDirection
+  created_at: OrderByDirection
+  updated_at: OrderByDirection
+  owner_id: OrderByDirection
+  name: OrderByDirection
+  category: OrderByDirection
+  title: OrderByDirection
+  content: OrderByDirection
+  coverImageIndex: OrderByDirection
+  domestic: OrderByDirection
+  location: OrderByDirection
+  detailed_location: OrderByDirection
+  display_type: OrderByDirection
+}
+
+input housesUpdateInput {
+  id: UUID
+  created_at: Datetime
+  updated_at: Datetime
+  owner_id: UUID
+  name: String
+  category: String
+  title: String
+  content: String
+  imageURLs: [String]
+  coverImageIndex: Int
+  domestic: Boolean
+  location: String
+  detailed_location: String
+  display_type: String
+}
+
+type housesUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [houses!]!
+}
+
+"""
+Boolean expression comparing fields on type "ID"
+"""
+input IDFilter {
+  eq: ID
+}
+
+"""
+Boolean expression comparing fields on type "Int"
+"""
+input IntFilter {
+  eq: Int
+  gt: Int
+  gte: Int
+  in: [Int!]
+  is: FilterIs
+  lt: Int
+  lte: Int
+  neq: Int
+}
+
+type invitations implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  created_at: Datetime!
+  code: String!
+  inviter_id: UUID!
+  invitee_name: String!
+  invitee_email: String!
+  status: String!
+  members: members!
+}
+
+type invitationsConnection {
+  edges: [invitationsEdge!]!
+  pageInfo: PageInfo!
+}
+
+type invitationsDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [invitations!]!
+}
+
+type invitationsEdge {
+  cursor: String!
+  node: invitations!
+}
+
+input invitationsFilter {
+  created_at: DatetimeFilter
+  code: StringFilter
+  inviter_id: UUIDFilter
+  invitee_email: StringFilter
+  status: StringFilter
+  nodeId: IDFilter
+}
+
+input invitationsInsertInput {
+  created_at: Datetime
+  code: String
+  inviter_id: UUID
+  invitee_email: String
+  status: String
+  invitee_name: String
+}
+
+type invitationsInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [invitations!]!
+}
+
+input invitationsOrderBy {
+  created_at: OrderByDirection
+  code: OrderByDirection
+  inviter_id: OrderByDirection
+  invitee_email: OrderByDirection
+  status: OrderByDirection
+}
+
+input invitationsUpdateInput {
+  created_at: Datetime
+  code: String
+  inviter_id: UUID
+  invitee_email: String
+  status: String
+}
+
+type invitationsUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [invitations!]!
+}
+
+"""A Javascript Object Notation value serialized as a string"""
+scalar JSON
+
+type members implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  member_status: String!
+  created_at: Datetime!
+  member_type: String
+  name: String
+  login_id: String
+  nickname: String
+  gender: String
+  birthday: Date
+  phone_no: String
+  sns_url: String
+  profile_photo: String
+  updated_at: Datetime
+  id: UUID!
+  eventsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: eventsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [eventsOrderBy!]
+  ): eventsConnection
+  event_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_commentsOrderBy!]
+  ): event_commentsConnection
+  event_bookmarksCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_bookmarksFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_bookmarksOrderBy!]
+  ): event_bookmarksConnection
+  house_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: house_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [house_commentsOrderBy!]
+  ): house_commentsConnection
+  housesCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: housesFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [housesOrderBy!]
+  ): housesConnection
+  invitationsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: invitationsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [invitationsOrderBy!]
+  ): invitationsConnection
+}
+
+type membersConnection {
+  edges: [membersEdge!]!
+  pageInfo: PageInfo!
+}
+
+type membersDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [members!]!
+}
+
+type membersEdge {
+  cursor: String!
+  node: members!
+}
+
+input membersFilter {
+  member_status: StringFilter
+  created_at: DatetimeFilter
+  member_type: StringFilter
+  name: StringFilter
+  login_id: StringFilter
+  nickname: StringFilter
+  gender: StringFilter
+  birthday: DateFilter
+  phone_no: StringFilter
+  sns_url: StringFilter
+  profile_photo: StringFilter
+  updated_at: DatetimeFilter
+  id: UUIDFilter
+  nodeId: IDFilter
+}
+
+input membersInsertInput {
+  member_status: String
+  created_at: Datetime
+  member_type: String
+  name: String
+  login_id: String
+  nickname: String
+  gender: String
+  birthday: Date
+  phone_no: String
+  sns_url: String
+  profile_photo: String
+  updated_at: Datetime
+  id: UUID
+}
+
+type membersInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [members!]!
+}
+
+input membersOrderBy {
+  member_status: OrderByDirection
+  created_at: OrderByDirection
+  member_type: OrderByDirection
+  name: OrderByDirection
+  login_id: OrderByDirection
+  nickname: OrderByDirection
+  gender: OrderByDirection
+  birthday: OrderByDirection
+  phone_no: OrderByDirection
+  sns_url: OrderByDirection
+  profile_photo: OrderByDirection
+  updated_at: OrderByDirection
+  id: OrderByDirection
+}
+
+input membersUpdateInput {
+  member_status: String
+  created_at: Datetime
+  member_type: String
+  name: String
+  login_id: String
+  nickname: String
+  gender: String
+  birthday: Date
+  phone_no: String
+  sns_url: String
+  profile_photo: String
+  updated_at: Datetime
+  id: UUID
+}
+
+type membersUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [members!]!
+}
+
+"""The root type for creating and mutating data"""
+type Mutation {
+  """Deletes zero or more records from the `event_bookmarks` collection"""
+  deleteFromevent_bookmarksCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: event_bookmarksFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): event_bookmarksDeleteResponse!
+
+  """Deletes zero or more records from the `event_comments` collection"""
+  deleteFromevent_commentsCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: event_commentsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): event_commentsDeleteResponse!
+
+  """Deletes zero or more records from the `events` collection"""
+  deleteFromeventsCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: eventsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): eventsDeleteResponse!
+
+  """Deletes zero or more records from the `house_comments` collection"""
+  deleteFromhouse_commentsCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: house_commentsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): house_commentsDeleteResponse!
+
+  """Deletes zero or more records from the `houses` collection"""
+  deleteFromhousesCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: housesFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): housesDeleteResponse!
+
+  """Deletes zero or more records from the `invitations` collection"""
+  deleteFrominvitationsCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: invitationsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): invitationsDeleteResponse!
+
+  """Deletes zero or more records from the `members` collection"""
+  deleteFrommembersCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: membersFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): membersDeleteResponse!
+
+  """Deletes zero or more records from the `waitings` collection"""
+  deleteFromwaitingsCollection(
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: waitingsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): waitingsDeleteResponse!
+
+  """Adds one or more `event_bookmarks` records to the collection"""
+  insertIntoevent_bookmarksCollection(objects: [event_bookmarksInsertInput!]!): event_bookmarksInsertResponse
+
+  """Adds one or more `event_comments` records to the collection"""
+  insertIntoevent_commentsCollection(objects: [event_commentsInsertInput!]!): event_commentsInsertResponse
+
+  """Adds one or more `events` records to the collection"""
+  insertIntoeventsCollection(objects: [eventsInsertInput!]!): eventsInsertResponse
+
+  """Adds one or more `house_comments` records to the collection"""
+  insertIntohouse_commentsCollection(objects: [house_commentsInsertInput!]!): house_commentsInsertResponse
+
+  """Adds one or more `houses` records to the collection"""
+  insertIntohousesCollection(objects: [housesInsertInput!]!): housesInsertResponse
+
+  """Adds one or more `invitations` records to the collection"""
+  insertIntoinvitationsCollection(objects: [invitationsInsertInput!]!): invitationsInsertResponse
+
+  """Adds one or more `members` records to the collection"""
+  insertIntomembersCollection(objects: [membersInsertInput!]!): membersInsertResponse
+
+  """Adds one or more `waitings` records to the collection"""
+  insertIntowaitingsCollection(objects: [waitingsInsertInput!]!): waitingsInsertResponse
+
+  """Updates zero or more records in the `event_bookmarks` collection"""
+  updateevent_bookmarksCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: event_bookmarksUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: event_bookmarksFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): event_bookmarksUpdateResponse!
+
+  """Updates zero or more records in the `event_comments` collection"""
+  updateevent_commentsCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: event_commentsUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: event_commentsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): event_commentsUpdateResponse!
+
+  """Updates zero or more records in the `events` collection"""
+  updateeventsCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: eventsUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: eventsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): eventsUpdateResponse!
+
+  """Updates zero or more records in the `house_comments` collection"""
+  updatehouse_commentsCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: house_commentsUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: house_commentsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): house_commentsUpdateResponse!
+
+  """Updates zero or more records in the `houses` collection"""
+  updatehousesCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: housesUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: housesFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): housesUpdateResponse!
+
+  """Updates zero or more records in the `invitations` collection"""
+  updateinvitationsCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: invitationsUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: invitationsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): invitationsUpdateResponse!
+
+  """Updates zero or more records in the `members` collection"""
+  updatemembersCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: membersUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: membersFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): membersUpdateResponse!
+
+  """Updates zero or more records in the `waitings` collection"""
+  updatewaitingsCollection(
+    """
+    Fields that are set will be updated for all records matching the `filter`
+    """
+    set: waitingsUpdateInput!
+
+    """Restricts the mutation's impact to records matching the criteria"""
+    filter: waitingsFilter
+
+    """
+    The maximum number of records in the collection permitted to be affected
+    """
+    atMost: Int! = 1
+  ): waitingsUpdateResponse!
+}
+
+interface Node {
+  """Retrieves a record by `ID`"""
+  nodeId: ID!
+}
+
+"""Any type not handled by the type system"""
+scalar Opaque
+
+"""
+Boolean expression comparing fields on type "Opaque"
+"""
+input OpaqueFilter {
+  eq: Opaque
+  is: FilterIs
+}
+
+"""Defines a per-field sorting order"""
+enum OrderByDirection {
+  """Ascending order, nulls first"""
+  AscNullsFirst
+
+  """Ascending order, nulls last"""
+  AscNullsLast
+
+  """Descending order, nulls first"""
+  DescNullsFirst
+
+  """Descending order, nulls last"""
+  DescNullsLast
+}
+
+type PageInfo {
+  endCursor: String
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+}
+
+"""The root type for querying data"""
+type Query {
+  """A pagable collection of type `event_bookmarks`"""
+  event_bookmarksCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_bookmarksFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_bookmarksOrderBy!]
+  ): event_bookmarksConnection
+
+  """A pagable collection of type `event_comments`"""
+  event_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: event_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [event_commentsOrderBy!]
+  ): event_commentsConnection
+
+  """A pagable collection of type `events`"""
+  eventsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: eventsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [eventsOrderBy!]
+  ): eventsConnection
+
+  """A pagable collection of type `house_comments`"""
+  house_commentsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: house_commentsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [house_commentsOrderBy!]
+  ): house_commentsConnection
+
+  """A pagable collection of type `houses`"""
+  housesCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: housesFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [housesOrderBy!]
+  ): housesConnection
+
+  """A pagable collection of type `invitations`"""
+  invitationsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: invitationsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [invitationsOrderBy!]
+  ): invitationsConnection
+
+  """A pagable collection of type `members`"""
+  membersCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: membersFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [membersOrderBy!]
+  ): membersConnection
+
+  """Retrieve a record by its `ID`"""
+  node(
+    """The record's `ID`"""
+    nodeId: ID!
+  ): Node
+
+  """A pagable collection of type `waitings`"""
+  waitingsCollection(
+    """Query the first `n` records in the collection"""
+    first: Int
+
+    """Query the last `n` records in the collection"""
+    last: Int
+
+    """Query values in the collection before the provided cursor"""
+    before: Cursor
+
+    """Query values in the collection after the provided cursor"""
+    after: Cursor
+
+    """Filters to apply to the results set when querying from the collection"""
+    filter: waitingsFilter
+
+    """Sort order to apply to the collection"""
+    orderBy: [waitingsOrderBy!]
+  ): waitingsConnection
+}
+
+"""
+Boolean expression comparing fields on type "String"
+"""
+input StringFilter {
+  eq: String
+  gt: String
+  gte: String
+  ilike: String
+  in: [String!]
+  iregex: String
+  is: FilterIs
+  like: String
+  lt: String
+  lte: String
+  neq: String
+  regex: String
+  startsWith: String
+}
+
+"""A time without date information"""
+scalar Time
+
+"""
+Boolean expression comparing fields on type "Time"
+"""
+input TimeFilter {
+  eq: Time
+  gt: Time
+  gte: Time
+  in: [Time!]
+  is: FilterIs
+  lt: Time
+  lte: Time
+  neq: Time
+}
+
+"""A universally unique identifier"""
+scalar UUID
+
+"""
+Boolean expression comparing fields on type "UUID"
+"""
+input UUIDFilter {
+  eq: UUID
+  in: [UUID!]
+  is: FilterIs
+  neq: UUID
+}
+
+type waitings implements Node {
+  """Globally Unique Record Identifier"""
+  nodeId: ID!
+  email: String!
+  instagram_id: String
+  sns_url: String
+  created_at: Datetime!
+}
+
+type waitingsConnection {
+  edges: [waitingsEdge!]!
+  pageInfo: PageInfo!
+}
+
+type waitingsDeleteResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [waitings!]!
+}
+
+type waitingsEdge {
+  cursor: String!
+  node: waitings!
+}
+
+input waitingsFilter {
+  email: StringFilter
+  instagram_id: StringFilter
+  sns_url: StringFilter
+  created_at: DatetimeFilter
+  nodeId: IDFilter
+}
+
+input waitingsInsertInput {
+  email: String
+  instagram_id: String
+  sns_url: String
+  created_at: Datetime
+}
+
+type waitingsInsertResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [waitings!]!
+}
+
+input waitingsOrderBy {
+  email: OrderByDirection
+  instagram_id: OrderByDirection
+  sns_url: OrderByDirection
+  created_at: OrderByDirection
+}
+
+input waitingsUpdateInput {
+  email: String
+  instagram_id: String
+  sns_url: String
+  created_at: Datetime
+}
+
+type waitingsUpdateResponse {
+  """Count of the records impacted by the mutation"""
+  affectedCount: Int!
+
+  """Array of records impacted by the mutation"""
+  records: [waitings!]!
+}
