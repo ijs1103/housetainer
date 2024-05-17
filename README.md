@@ -3,14 +3,14 @@
 
 ## 목차
 - [🏠 프로젝트 소개](#-프로젝트-소개)
-- [🏠 순서도](#-순서도)
+- [🏠 로그인 및 회원가입 프로세스](#-로그인-및-회원가입-프로세스)
 - [🏠 Feature-0. 공통기능](#-feature-0-공통기능)
     + [고민한 점](#0-1-고민한-점) 
     + [키워드](#0-2-키워드)
 - [🏠 Feature-1. 회원가입/로그인](#-feature-1-회원가입/로그인)
     + [고민한 점](#1-1-고민한-점) 
     + [키워드](#1-2-키워드)
-- [🏠 Feature-2. 홈 화면](#-feature-2-상품-목록화면-구현)
+- [🏠 Feature-2. 홈 화면](#-feature-2-홈-화면)
     + [고민한 점](#2-1-고민한-점)
     + [키워드](#2-2-키워드)
 - [🏠 Feature-3. 리스트 화면](#-feature-3-리스트-화면)
@@ -24,60 +24,83 @@
 ## 🏠 프로젝트 소개
 인터스타일의 하우스테이너 iOS 앱.
 집소개와 이벤트 스케줄을 생성하고 공유하는 커뮤니티입니다.
-- 담당 파트 : 로그인,회원가입,회원탈퇴/메인,상세/신고,문의/알림 설정
-- 진행 기간 : 2023.11 ~ 진행중 (90% 완료)
+- 기능 :
+  - 소셜로그인, 초대코드 인증, 회원가입, 대기명단 등록 
+  - 탭메뉴, 즐겨찾기, 댓글, 게시글 생성/수정, 알림(댓글, 즐겨찾기 관련)
+  - 마이페이지, 프로필 변경, 초대코드 발송, my (게시글, 즐겨찾기, 초대한 회원) 조회, 신고하기, 문의하기, 유저차단  
+- 진행 기간 : 2023.11 ~ 2024.5
 - 개발 환경 : swift 5, xcode 15.1
 - Deployment Target : iOS 15.0
 ### 로그인 및 회원가입
 <table>
     <tr align="center">
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/b53b12e2-e1ce-4a29-8c7e-02cd5cb2a0bc/></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/d3f6f7ea-f49d-418f-bec4-98be7d9849be/></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/5cff4da9-d13b-43ac-90ba-061c7e971cd9 /></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/e8ed5e2f-cbfb-4738-a7d1-eff80dc60fce/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/922bca4d-6ee4-41ff-b732-b0fb3500e2f4 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/d3f6f7ea-f49d-418f-bec4-98be7d9849be width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/5cff4da9-d13b-43ac-90ba-061c7e971cd9 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/e8ed5e2f-cbfb-4738-a7d1-eff80dc60fce width="175px"/></td>
     </tr>
     <tr align="center">
-        <td style="min-width: 175px;">로그인</td>
-        <td style="min-width: 175px;">초대코드 인증</td>
-        <td style="min-width: 175px;">소식받기</td>
-        <td style="min-width: 175px;">닉네임 설정</td>
+        <td>로그인</td>
+        <td>초대코드 인증</td>
+        <td>소식받기</td>
+        <td>닉네임 설정</td>
+    </tr>
+  <tr align="center">
+        <td><img src=https://github.com/Interstyle/housetainer-admin/assets/42196410/4ec3e61e-fef1-4bfa-9f4e-e57967d6465c width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-admin/assets/42196410/ca8eeff1-b08c-4097-bf13-47cac8592406 width="175px"/></td>
+    </tr>
+    <tr align="center">
+        <td>약관동의</td>
+      	<td>eula 약관</td>
     </tr>
 </table>
 
-### 게시글
+### 홈화면(탭메뉴)
 <table>
     <tr align="center">
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/dcf9f38a-8c11-466a-ae6b-7d5214509af6 /></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/6bcf07d9-6cd5-4399-b0b3-e677be442215/></td>
-      <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/ddc36c69-a4d5-4a45-9b98-11f92ad736ac/></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/893e6d08-b717-489d-bcbf-c9ae8b88dfcc /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/dd531f3a-8811-4799-b7d7-7c70230b4f76 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/973197a4-5d35-40dd-8138-20c898a0a593 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/52a26f7a-0266-48c8-b5ba-57ed7b86c94e width="175px"/></td>
     </tr>
     <tr align="center">
-        <td style="min-width: 175px;">홈화면</td>
-        <td style="min-width: 175px;">홈화면2</td>
-       <td style="min-width: 175px;">탭메뉴 - 소셜캘린더 리스트</td>
-        <td style="min-width: 175px;">탭메뉴 - 오픈하우스 리스트</td>
+        <td>홈화면</td>
+        <td>홈화면2</td>
+        <td>홈화면3</td>
+    </tr>
+</table>
+
+### 알림
+<table>
+    <tr align="center">
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/6b932338-ca0b-4b35-ba4d-50e04b127170 width="175px" /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/df873307-b691-48ef-9a5d-7a12fc05cf55 width="175px" /></td>
+    </tr>
+    <tr align="center">
+        <td>알림 화면</td>
+        <td>알림 화면2</td>
     </tr>
 </table>
 
 ### 소셜캘린더
 <table>
     <tr align="center">
-        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/36965ce6-d181-4d06-a945-10ad408103a6 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/8e0b0d80-a438-411b-bf61-b9f4fca0037e width="175px"/></td>
         <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/8a4cbb6f-93b8-401a-84ec-b7fea8cc4d00 width="175px"/></td>
-      <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/05783d3e-c283-4ede-bfa3-d61cf355cf46 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/05783d3e-c283-4ede-bfa3-d61cf355cf46 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/8001bc3d-c9a6-4ccc-b9a9-82b949335b86 width="175px"/></td>
     </tr>
     <tr align="center">
         <td>상세 화면</td>
-        <td>상세 화면2</td>
-      	<td>수정 화면</td>
+        <td>상세 화면 - 댓글</td>
+      	<td>상세 화면 - 수정</td>
+        <td>상세 화면 - 즐겨찾기</td>
     </tr>
 </table>
 
 ### 오픈하우스
 <table>
     <tr align="center">
-        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/ac21c0b2-d5db-4bb1-bf03-5cd024c8e410 width="175px" /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/319438da-63be-4b95-94dc-e4b397d1a2bf width="175px" /></td>
         <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/e939a642-2293-4f13-a79c-88d75441d1e3 width="175px" /></td>
     </tr>
     <tr align="center">
@@ -86,11 +109,35 @@
     </tr>
 </table>
 
+### 마이페이지 
+<table>
+    <tr align="center">
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/80b0ab47-4960-470e-a02c-48bfbb0ccd25 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/9517c493-6d98-413a-83de-9e73f43c391f width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/f3f4d193-2749-4fcc-9d67-7e59e135c1a9 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/66f0cf31-f03a-4767-bf64-47a21f60aa3c width="175px"/></td>
+    </tr>
+    <tr align="center">
+        <td>마이페이지 </td>
+        <td>마이페이지 - 나의 하우스, 캘린더 조회</td>
+      	<td>마이페이지 - 즐겨찾기한 일정 조회</td>
+        <td>마이페이지 - 회원탈퇴</td>
+    </tr>
+    <tr align="center">
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/9c338529-c7d9-475d-89fb-6eae3f083521 width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/fece826c-4add-40b2-9278-2089d6d93b2f width="175px"/></td>
+    </tr>
+    <tr align="center">
+        <td>마이페이지 - 홈버디 초대</td>
+      	<td>마이페이지 - 프로필 변경</td>
+    </tr>
+</table>
+
 ### 신고 및 문의하기
 <table>
     <tr align="center">
-        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/f7745d95-e8cb-4fd1-9e11-7e452360bb60 width="175px" /></td>
-        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/34937f41-2d37-4b7c-a23a-c1f7cae55cea width="175px" /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/acf9f903-ff39-412c-8636-472ebdb40d06 width="175px" /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/957e3b0b-c8ff-4b95-af06-928d078d61a7 width="175px" /></td>
     </tr>
     <tr align="center">
         <td>신고하기</td>
@@ -99,20 +146,14 @@
 </table>
 
 
-## 🏠 순서도
+## 🏠 로그인 및 회원가입 프로세스
 
 <table>
     <tr align="center">
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/c5334d9e-030e-4f1b-a1e5-dabe7bb1b8a8 /></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/7efa153f-0df5-4b48-852a-4788bbaaff11 /></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/adca3774-d541-42a3-a05b-79ea4f9d9c98 /></td>
-        <td style="min-width: 175px;"><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/ae51dcab-2fa6-4479-add4-86cd02182a6e /></td>
+        <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/c5334d9e-030e-4f1b-a1e5-dabe7bb1b8a8 width = "350px"/></td>
     </tr>
     <tr align="center">
-        <td style="min-width: 175px;">로그인</td>
-        <td style="min-width: 175px;">메인화면</td>
-        <td style="min-width: 175px;">탭메뉴</td>
-        <td style="min-width: 175px;">마이페이지</td>
+        <td style="min-width: 350px;">순서도</td>
     </tr>
 </table>
 
@@ -130,7 +171,10 @@ Combine 프레임워크를 사용하여 비동기적으로 데이터를 처리�
                        
 #### 3️⃣ supabase
 슈퍼베이스의 다양한 기능들을 공식문서를 통해 익히고 활용하였습니다.
-특히, 단순 쿼리뿐만 아니라 복잡한 join문과 db 최적화를 위한 limit, indexing, filtering 기법들을 익히고 적용하였습니다.                   
+특히, 단순 쿼리뿐만 아니라 복잡한 join문과 db 최적화를 위한 limit, indexing, filtering 기법들을 익히고 적용하였습니다.
+
+#### 4️⃣ 이미지 컴프레싱 및 리사이징
+슈퍼베이스 storage에 이미지 컴프레싱 및 리사이징을 적용하고 업로드 하여, 네트워크 통신 비용과 메모리 낭비를 획기적으로 줄일 수 있었습니다.
                      
 ### 0-2 키워드
 - MVVM, Combine, 디자인시스템
@@ -142,7 +186,7 @@ Combine 프레임워크를 사용하여 비동기적으로 데이터를 처리�
 슈퍼베이스에서 카카오/네이버 로그인은 기본 Provider로 제공하지 않아서 네이티브로 구현을 하였습니다. 로그인이 성공하면 Edge function에 accessToken과 refreshToken을 넘겨주고 슈퍼베이스의 session을 생성하였습니다.
 (애플/구글 로그인은 슈퍼베이스에서 자동으로 session을 생성합니다.)               
 #### 2️⃣ 로그인 모달
-메인 화면에서 로그인 상태가 아니라면 viewDidAppear 시점에서 로그인 화면(SigninVC)을 풀스크린 모달로 띄워줍니다. 반대로 로그인 상태라면 모달창을 닫고 메인 화면이 나타납니다. 
+메인 화면에서 로그인 상태가 아니라면 viewWillAppear 시점에서 로그인 화면(SigninVC)을 풀스크린 모달로 띄워줍니다. 반대로 로그인 상태라면 모달창을 닫고 메인 화면이 나타납니다. 
                        
 #### 3️⃣ 로그인 과정
 소셜로그인을 성공하여 세션 데이터를 조회하였을때, 기존의 가입자는 메인화면으로 이동을 합니다. 미가입자는 초대코드 입력화면으로 이동합니다. 초대코드의 기한이 만료되었거나 로그인한 계정의 이메일과 db의 저장된 이메일이 다르면 에러메시지를 표시합니다.닉네임 설정 화면에서 닉네임이 중복되면 에러메시지를 표시합니다. 모든 입력을 마치면 회원가입이 완료됩니다.
@@ -191,8 +235,10 @@ Task 블록 내부에서 UI업데이트를 일으키는 코드가 사용되었�
                        
 #### 4️⃣ 즐겨찾기 기능
 현재 로그인한 아이디를 통해 각각의 게시물을 즐겨찾기 하였는지 확인하였고 즐겨찾기를 추가/해제하면 즉각적으로 UI를 업데이트 하였습니다.
-
 또한, UIAlertController를 빌더 패턴을 사용하여 구성하였습니다.(AlertBuilder) 옵션을 설정하는 메서드를 연쇄적으로 호출하여 명시적이며 가독성과 재사용성을 높였습니다. 
+
+#### 4️⃣ 무한스크롤 기능
+실제로 사용자가 스크롤을 내려서 테이블뷰의 끝에 도달했을 때만 데이터를 추가적으로 Fetch 하도록 구현하였습니다. 또한, 데이터를 더 이상 가져올 수 없으면 스크롤을 아무리 내려도 추가적인 네트워킹 실행을 할 수 없도록 처리 하였습니다.
                        
 
 ### 3-2 키워드
