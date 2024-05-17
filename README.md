@@ -61,11 +61,13 @@
         <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/dd531f3a-8811-4799-b7d7-7c70230b4f76 width="175px"/></td>
         <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/973197a4-5d35-40dd-8138-20c898a0a593 width="175px"/></td>
         <td><img src=https://github.com/Interstyle/housetainer-ios/assets/42196410/52a26f7a-0266-48c8-b5ba-57ed7b86c94e width="175px"/></td>
+        <td><img src=https://github.com/Interstyle/housetainer-admin/assets/42196410/a8f1d6bc-edf7-4b3b-9106-9094854b35cc width="175px"/></td>
     </tr>
     <tr align="center">
         <td>홈화면</td>
         <td>홈화면2</td>
         <td>홈화면3</td>
+        <td>일정생성</td>
     </tr>
 </table>
 
