@@ -39,11 +39,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         setupTabBar()
         self.window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .white
-        self.window?.rootViewController = TabBarVC()
-        //        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
-        //        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-        //            self.window?.rootViewController = InviteVC()
-        //        }
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+            self.window?.rootViewController = TabBarVC()
+        }
         window?.makeKeyAndVisible()
     }
     

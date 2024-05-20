@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import Apollo
-import Interstyle
 import Combine
 import Supabase
 import Combine

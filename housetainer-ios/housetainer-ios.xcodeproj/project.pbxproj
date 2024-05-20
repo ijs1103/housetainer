@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,7 +79,6 @@
 		2A6054C02B18C1BF0081FF0F /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6054852B18C1BF0081FF0F /* MyTextField.swift */; };
 		2A6054C32B18C23E0081FF0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2A6054C22B18C23E0081FF0F /* Kingfisher */; };
 		2A6054C62B18C2590081FF0F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A6054C52B18C2590081FF0F /* SnapKit */; };
-		2A6054D52B18D1310081FF0F /* AccordianCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6054D42B18D1310081FF0F /* AccordianCell.swift */; };
 		2A6300182B4EF01F001CC5B9 /* OpenHouseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6300172B4EF01F001CC5B9 /* OpenHouseDetailVC.swift */; };
 		2A63FFBA2B2AE638001CC5B9 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A63FFB92B2AE638001CC5B9 /* UITableViewCell+.swift */; };
 		2A63FFBC2B2AE678001CC5B9 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A63FFBB2B2AE678001CC5B9 /* UICollectionViewCell+.swift */; };
@@ -181,7 +180,6 @@
 		2AEE44912B91C98C0003CB7D /* EdgeFunctionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE44902B91C98C0003CB7D /* EdgeFunctionProvider.swift */; };
 		2AFA95BB2B1B20D200AD48EC /* SocialCalendarDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA95BA2B1B20D200AD48EC /* SocialCalendarDetailVM.swift */; };
 		4C7F72417F55AE6F2E8A03EA /* Pods_housetainer_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE491F754B72D93E902EBD8 /* Pods_housetainer_ios.framework */; };
-		5803A9D12BA61972004E0FC6 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5803A9D02BA61972004E0FC6 /* Interstyle */; };
 		580864C52B555AD8005F60D9 /* UpdateProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580864C42B555AD8005F60D9 /* UpdateProfileVM.swift */; };
 		580864C72B555AE1005F60D9 /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580864C62B555AE1005F60D9 /* UpdateProfileVC.swift */; };
 		580864C92B555AED005F60D9 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580864C82B555AED005F60D9 /* UpdateProfileView.swift */; };
@@ -196,24 +194,16 @@
 		5833F1982BA6C56F00C67E23 /* UpdateProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1972BA6C56F00C67E23 /* UpdateProfileRepository.swift */; };
 		5833F19B2BA6C5B200C67E23 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F19A2BA6C5B200C67E23 /* UserProfile.swift */; };
 		5833F19D2BA6C5E800C67E23 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F19C2BA6C5E800C67E23 /* Gender.swift */; };
-		5833F1A02BA6C6F200C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F19F2BA6C6F200C67E23 /* Interstyle */; };
-		5833F1A32BA6DB1000C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1A22BA6DB1000C67E23 /* Interstyle */; };
 		5833F1A52BA6DC7700C67E23 /* ImageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1A42BA6DC7700C67E23 /* ImageReference.swift */; };
 		5833F1A72BA6DE2100C67E23 /* PHImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1A62BA6DE2100C67E23 /* PHImageManager.swift */; };
 		5833F1A92BA6DF0600C67E23 /* ConcurrencyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1A82BA6DF0600C67E23 /* ConcurrencyWrapper.swift */; };
 		5833F1AC2BA7050A00C67E23 /* UpdateNicknameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1AB2BA7050A00C67E23 /* UpdateNicknameRepository.swift */; };
 		5833F1AF2BA7059800C67E23 /* UserNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1AE2BA7059800C67E23 /* UserNickname.swift */; };
-		5833F1B22BA705F600C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1B12BA705F600C67E23 /* Interstyle */; };
-		5833F1B52BA7066500C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1B42BA7066500C67E23 /* Interstyle */; };
-		5833F1B82BA70BBB00C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1B72BA70BBB00C67E23 /* Interstyle */; };
-		5833F1BB2BA711FE00C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1BA2BA711FE00C67E23 /* Interstyle */; };
 		5833F1BF2BA7124200C67E23 /* InviteUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1BE2BA7124200C67E23 /* InviteUserRepository.swift */; };
 		5833F1C32BA7137F00C67E23 /* InviteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1C22BA7137F00C67E23 /* InviteUser.swift */; };
-		5833F1C62BA717D600C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1C52BA717D600C67E23 /* Interstyle */; };
 		5833F1CA2BA7389300C67E23 /* CreateSocialCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1C92BA7389300C67E23 /* CreateSocialCalendar.swift */; };
 		5833F1CC2BA738BD00C67E23 /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1CB2BA738BD00C67E23 /* ScheduleType.swift */; };
 		5833F1CE2BA739D800C67E23 /* CreateSocialCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833F1CD2BA739D800C67E23 /* CreateSocialCalendarRepository.swift */; };
-		5833F1D12BA7488E00C67E23 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 5833F1D02BA7488E00C67E23 /* Interstyle */; };
 		583437C62B53B45D0081B092 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583437BC2B53B45D0081B092 /* Calendar+Extension.swift */; };
 		583437C72B53B45D0081B092 /* CalendarMonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583437BE2B53B45D0081B092 /* CalendarMonthCollectionViewCell.swift */; };
 		583437C82B53B45D0081B092 /* CalendarDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583437BF2B53B45D0081B092 /* CalendarDayCollectionViewCell.swift */; };
@@ -248,9 +238,7 @@
 		585080C52BA20106007F90B1 /* MyPageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585080C42BA20106007F90B1 /* MyPageRepository.swift */; };
 		585080C72BA2071C007F90B1 /* InvitationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585080C62BA2071C007F90B1 /* InvitationStatus.swift */; };
 		585080C92BA20738007F90B1 /* MemeberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585080C82BA20738007F90B1 /* MemeberType.swift */; };
-		585080CB2BA35A01007F90B1 /* GraphQLNullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585080CA2BA35A01007F90B1 /* GraphQLNullable.swift */; };
 		585080CD2BA35E51007F90B1 /* Task+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585080CC2BA35E51007F90B1 /* Task+Cancellable.swift */; };
-		586E5F322BC2F1A8009497AB /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 586E5F312BC2F1A8009497AB /* Interstyle */; };
 		586E5F342BC2FA31009497AB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E5F332BC2FA31009497AB /* UIFont+Extension.swift */; };
 		586E5F362BC2FDB1009497AB /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 586E5F352BC2FDB1009497AB /* PlayfairDisplay-Regular.ttf */; };
 		587051FA2B4EDF9A00E08A89 /* MyPagePublicBuddyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587051F92B4EDF9A00E08A89 /* MyPagePublicBuddyCollectionViewCell.swift */; };
@@ -265,11 +253,6 @@
 		589AED042B456DFF0095835D /* MyPageIMakeSocialCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AED032B456DFF0095835D /* MyPageIMakeSocialCalendarTableViewCell.swift */; };
 		589AED062B45AF860095835D /* MyPageHouseTainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AED052B45AF860095835D /* MyPageHouseTainerCollectionViewCell.swift */; };
 		589AED082B45BBA10095835D /* MyPageIMakeSocialCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AED072B45BBA10095835D /* MyPageIMakeSocialCalendarCollectionViewCell.swift */; };
-		58AFBFB32B83A9880024F33F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 58AFBFB22B83A9880024F33F /* Apollo */; };
-		58AFBFB92B83B0440024F33F /* interstyle.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 58AFBFB72B83B0440024F33F /* interstyle.graphqls */; };
-		58AFBFBA2B83B0440024F33F /* operations.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 58AFBFB82B83B0440024F33F /* operations.graphql */; };
-		58AFBFC82B8521EF0024F33F /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 58AFBFC72B8521EF0024F33F /* Interstyle */; };
-		58AFBFCB2B85279C0024F33F /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 58AFBFCA2B85279C0024F33F /* Interstyle */; };
 		58C9D3E02B44461B00959007 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D3DF2B44461B00959007 /* Preview.swift */; };
 		58C9D3E32B44465D00959007 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D3E22B44465D00959007 /* MyPageView.swift */; };
 		58C9D3E52B44483400959007 /* MyPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D3E42B44483400959007 /* MyPageVM.swift */; };
@@ -286,14 +269,12 @@
 		58DE34FB2B7FE30100E6E00B /* SelectDateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE34FA2B7FE30100E6E00B /* SelectDateVM.swift */; };
 		58DE34FD2B80551300E6E00B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE34FC2B80551300E6E00B /* Date+Extension.swift */; };
 		58DE34FF2B805C4C00E6E00B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE34FE2B805C4C00E6E00B /* UIImageView+Extension.swift */; };
-		58E718022BBDC076000026AC /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 58E718012BBDC076000026AC /* Interstyle */; };
 		58FAFDDE2B8E354100ABCD84 /* MyPageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAFDDD2B8E354100ABCD84 /* MyPageTable.swift */; };
 		58FAFDE02B8E431500ABCD84 /* NSAttributedString+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAFDDF2B8E431500ABCD84 /* NSAttributedString+Builder.swift */; };
 		58FF87022BB0321D00FA1562 /* SpaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF87012BB0321D00FA1562 /* SpaceCategory.swift */; };
 		58FF87042BB0328E00FA1562 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF87032BB0328E00FA1562 /* Region.swift */; };
 		58FF87062BB032F500FA1562 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF87052BB032F500FA1562 /* City.swift */; };
 		58FF87082BB036CD00FA1562 /* Nation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF87072BB036CD00FA1562 /* Nation.swift */; };
-		58FF870D2BB0583E00FA1562 /* Interstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 58FF870C2BB0583E00FA1562 /* Interstyle */; };
 		58FF87102BB060F600FA1562 /* SheetItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF870F2BB060F600FA1562 /* SheetItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -510,7 +491,6 @@
 		585080C42BA20106007F90B1 /* MyPageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageRepository.swift; sourceTree = "<group>"; };
 		585080C62BA2071C007F90B1 /* InvitationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationStatus.swift; sourceTree = "<group>"; };
 		585080C82BA20738007F90B1 /* MemeberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeberType.swift; sourceTree = "<group>"; };
-		585080CA2BA35A01007F90B1 /* GraphQLNullable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLNullable.swift; sourceTree = "<group>"; };
 		585080CC2BA35E51007F90B1 /* Task+Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Cancellable.swift"; sourceTree = "<group>"; };
 		586E5F332BC2FA31009497AB /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		586E5F352BC2FDB1009497AB /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
@@ -527,8 +507,6 @@
 		589AED032B456DFF0095835D /* MyPageIMakeSocialCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageIMakeSocialCalendarTableViewCell.swift; sourceTree = "<group>"; };
 		589AED052B45AF860095835D /* MyPageHouseTainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageHouseTainerCollectionViewCell.swift; sourceTree = "<group>"; };
 		589AED072B45BBA10095835D /* MyPageIMakeSocialCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageIMakeSocialCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
-		58AFBFB72B83B0440024F33F /* interstyle.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interstyle.graphqls; sourceTree = "<group>"; };
-		58AFBFB82B83B0440024F33F /* operations.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = operations.graphql; sourceTree = "<group>"; };
 		58C9D3DF2B44461B00959007 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		58C9D3E22B44465D00959007 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		58C9D3E42B44483400959007 /* MyPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVM.swift; sourceTree = "<group>"; };
@@ -562,12 +540,8 @@
 			files = (
 				2AE953662B6A3E2500E75C4B /* Toast in Frameworks */,
 				2A644F4D2B25B172006FC605 /* KakaoSDK in Frameworks */,
-				5833F1C62BA717D600C67E23 /* Interstyle in Frameworks */,
 				2A644F512B25B172006FC605 /* KakaoSDKCert in Frameworks */,
-				5833F1D12BA7488E00C67E23 /* Interstyle in Frameworks */,
 				2A644F612B25B172006FC605 /* KakaoSDKTemplate in Frameworks */,
-				58E718022BBDC076000026AC /* Interstyle in Frameworks */,
-				58AFBFCB2B85279C0024F33F /* Interstyle in Frameworks */,
 				2A6054C32B18C23E0081FF0F /* Kingfisher in Frameworks */,
 				2A9D43732BE6834400100592 /* Storage in Frameworks */,
 				2A91CEFE2BD1240E008511B3 /* FirebaseRemoteConfigSwift in Frameworks */,
@@ -579,26 +553,15 @@
 				2A644F5F2B25B172006FC605 /* KakaoSDKTalk in Frameworks */,
 				2A644F552B25B172006FC605 /* KakaoSDKCommon in Frameworks */,
 				2A9D43712BE6834400100592 /* Realtime in Frameworks */,
-				58FF870D2BB0583E00FA1562 /* Interstyle in Frameworks */,
 				2A9D43752BE6834400100592 /* Supabase in Frameworks */,
 				2A6054C62B18C2590081FF0F /* SnapKit in Frameworks */,
-				5833F1A32BA6DB1000C67E23 /* Interstyle in Frameworks */,
-				5833F1B22BA705F600C67E23 /* Interstyle in Frameworks */,
 				2A644F592B25B172006FC605 /* KakaoSDKFriendCore in Frameworks */,
-				5833F1A02BA6C6F200C67E23 /* Interstyle in Frameworks */,
-				58AFBFB32B83A9880024F33F /* Apollo in Frameworks */,
 				2A71B2602BE6323B0053BF60 /* GoogleSignIn in Frameworks */,
 				2A644F632B25B172006FC605 /* KakaoSDKUser in Frameworks */,
-				5803A9D12BA61972004E0FC6 /* Interstyle in Frameworks */,
 				2A9D436B2BE6834400100592 /* Functions in Frameworks */,
 				2A91CEFC2BD1240E008511B3 /* FirebaseRemoteConfig in Frameworks */,
 				4C7F72417F55AE6F2E8A03EA /* Pods_housetainer_ios.framework in Frameworks */,
-				58AFBFC82B8521EF0024F33F /* Interstyle in Frameworks */,
-				5833F1B52BA7066500C67E23 /* Interstyle in Frameworks */,
-				586E5F322BC2F1A8009497AB /* Interstyle in Frameworks */,
 				2A644F532B25B172006FC605 /* KakaoSDKCertCore in Frameworks */,
-				5833F1BB2BA711FE00C67E23 /* Interstyle in Frameworks */,
-				5833F1B82BA70BBB00C67E23 /* Interstyle in Frameworks */,
 				2A644F5D2B25B172006FC605 /* KakaoSDKShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,7 +598,6 @@
 		2A6054182B18BF2A0081FF0F = {
 			isa = PBXGroup;
 			children = (
-				58AFBFB62B83B0440024F33F /* graphql */,
 				2A6054232B18BF2A0081FF0F /* housetainer-ios */,
 				2A6054222B18BF2A0081FF0F /* Products */,
 				CAFDE01B61AB9F188445FD9F /* Pods */,
@@ -923,7 +885,6 @@
 				58FAFDDF2B8E431500ABCD84 /* NSAttributedString+Builder.swift */,
 				585080C12BA200E1007F90B1 /* Optional+Extension.swift */,
 				585080CC2BA35E51007F90B1 /* Task+Cancellable.swift */,
-				585080CA2BA35A01007F90B1 /* GraphQLNullable.swift */,
 				5833F1A62BA6DE2100C67E23 /* PHImageManager.swift */,
 				2A8644EC2BC01BE200BCF741 /* UIImage+.swift */,
 				586E5F332BC2FA31009497AB /* UIFont+Extension.swift */,
@@ -1356,15 +1317,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		58AFBFB62B83B0440024F33F /* graphql */ = {
-			isa = PBXGroup;
-			children = (
-				58AFBFB72B83B0440024F33F /* interstyle.graphqls */,
-				58AFBFB82B83B0440024F33F /* operations.graphql */,
-			);
-			path = graphql;
-			sourceTree = "<group>";
-		};
 		58AFBFC32B851F5D0024F33F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1485,21 +1437,6 @@
 				2A644F602B25B172006FC605 /* KakaoSDKTemplate */,
 				2A644F622B25B172006FC605 /* KakaoSDKUser */,
 				2AE953652B6A3E2500E75C4B /* Toast */,
-				58AFBFB22B83A9880024F33F /* Apollo */,
-				58AFBFC72B8521EF0024F33F /* Interstyle */,
-				58AFBFCA2B85279C0024F33F /* Interstyle */,
-				5803A9D02BA61972004E0FC6 /* Interstyle */,
-				5833F19F2BA6C6F200C67E23 /* Interstyle */,
-				5833F1A22BA6DB1000C67E23 /* Interstyle */,
-				5833F1B12BA705F600C67E23 /* Interstyle */,
-				5833F1B42BA7066500C67E23 /* Interstyle */,
-				5833F1B72BA70BBB00C67E23 /* Interstyle */,
-				5833F1BA2BA711FE00C67E23 /* Interstyle */,
-				5833F1C52BA717D600C67E23 /* Interstyle */,
-				5833F1D02BA7488E00C67E23 /* Interstyle */,
-				58FF870C2BB0583E00FA1562 /* Interstyle */,
-				58E718012BBDC076000026AC /* Interstyle */,
-				586E5F312BC2F1A8009497AB /* Interstyle */,
 				2A91CEFB2BD1240E008511B3 /* FirebaseRemoteConfig */,
 				2A91CEFD2BD1240E008511B3 /* FirebaseRemoteConfigSwift */,
 				2A71B25F2BE6323B0053BF60 /* GoogleSignIn */,
@@ -1543,8 +1480,6 @@
 				2A6054C42B18C2590081FF0F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2A644F4B2B25B172006FC605 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				2AE953642B6A3E2500E75C4B /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				58AFBFB12B83A9880024F33F /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				586E5F302BC2F1A8009497AB /* XCLocalSwiftPackageReference "Interstyle" */,
 				2A91CEFA2BD1240E008511B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				2A71B25E2BE6323B0053BF60 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				2A9D43692BE6834400100592 /* XCRemoteSwiftPackageReference "supabase-swift" */,
@@ -1569,11 +1504,9 @@
 				2A35F1A32BF5CF4000489F97 /* usage_agreement.rtf in Resources */,
 				2A91CF002BD12423008511B3 /* GoogleService-Info.plist in Resources */,
 				2A35F1A12BF491AB00489F97 /* info_agreement.rtf in Resources */,
-				58AFBFBA2B83B0440024F33F /* operations.graphql in Resources */,
 				2A6054972B18C1BF0081FF0F /* Pretendard-Regular.otf in Resources */,
 				586E5F362BC2FDB1009497AB /* PlayfairDisplay-Regular.ttf in Resources */,
 				2A6054392B18C11A0081FF0F /* LaunchScreen.storyboard in Resources */,
-				58AFBFB92B83B0440024F33F /* interstyle.graphqls in Resources */,
 				2A6054982B18C1BF0081FF0F /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1843,7 +1776,6 @@
 				58C9D3EC2B4459E900959007 /* MyPageNewBuddyCollectionViewCell.swift in Sources */,
 				5837A8F42B7A2C3600B61692 /* InviteUserVM.swift in Sources */,
 				5833F19D2BA6C5E800C67E23 /* Gender.swift in Sources */,
-				585080CB2BA35A01007F90B1 /* GraphQLNullable.swift in Sources */,
 				5824BA2C2B4AA3AE007ED0E4 /* TabItemCollectionViewCell.swift in Sources */,
 				2A6054B82B18C1BF0081FF0F /* LabelWithPadding.swift in Sources */,
 				2AA2232A2B9A0FB800FDE336 /* AskingVC.swift in Sources */,
@@ -1860,7 +1792,6 @@
 				2A35D12B2B5EC64C0056ADCB /* RegexHelper.swift in Sources */,
 				2A6054AF2B18C1BF0081FF0F /* Placeholder.swift in Sources */,
 				5833F1CA2BA7389300C67E23 /* CreateSocialCalendar.swift in Sources */,
-				2A6054D52B18D1310081FF0F /* AccordianCell.swift in Sources */,
 				58C9D3EA2B444A1800959007 /* MyPageHeaderView.swift in Sources */,
 				583437CF2B53B4810081B092 /* IndexPath+Extension.swift in Sources */,
 			);
@@ -1999,7 +1930,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "housetainer-ios/housetainer-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3BLQ752CD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "housetainer-ios/Info.plist";
@@ -2015,7 +1946,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.housetainer-ios.kisang-park";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -2035,7 +1966,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "housetainer-ios/housetainer-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3BLQ752CD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "housetainer-ios/Info.plist";
@@ -2051,7 +1982,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.housetainer-ios.kisang-park";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -2085,13 +2016,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		586E5F302BC2F1A8009497AB /* XCLocalSwiftPackageReference "Interstyle" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Interstyle;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		2A6054C12B18C23E0081FF0F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -2148,14 +2072,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.1.0;
-			};
-		};
-		58AFBFB12B83A9880024F33F /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -2280,67 +2196,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AE953642B6A3E2500E75C4B /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
-		};
-		5803A9D02BA61972004E0FC6 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F19F2BA6C6F200C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1A22BA6DB1000C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1B12BA705F600C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1B42BA7066500C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1B72BA70BBB00C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1BA2BA711FE00C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1C52BA717D600C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		5833F1D02BA7488E00C67E23 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		586E5F312BC2F1A8009497AB /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		58AFBFB22B83A9880024F33F /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 58AFBFB12B83A9880024F33F /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		58AFBFC72B8521EF0024F33F /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		58AFBFCA2B85279C0024F33F /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		58E718012BBDC076000026AC /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
-		};
-		58FF870C2BB0583E00FA1562 /* Interstyle */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Interstyle;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

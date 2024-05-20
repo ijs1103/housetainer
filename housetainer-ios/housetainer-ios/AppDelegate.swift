@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initNaverSDK()
         FirebaseApp.configure()
         RemoteConfigManager.shared.setupRemoteConfig()
+        NetworkService.shared.setupSupabase(SupabaseClient(supabaseURL: RemoteConfigManager.shared.data.supabaseUrl, supabaseKey: RemoteConfigManager.shared.data.supabaseAnonKey))
         return true
     }
     

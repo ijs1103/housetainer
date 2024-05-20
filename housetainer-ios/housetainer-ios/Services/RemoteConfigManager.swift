@@ -18,7 +18,7 @@ final class RemoteConfigManager {
         let checkLatestVersion: Bool
     }
 
-    private(set) var data: ConfigData = ConfigData(supabaseUrl: Env.supabaseURL, supabaseAnonKey: Env.supabaseKey, needSignupInvitation: false, checkLatestVersion: false)
+    private(set) var data: ConfigData = ConfigData(supabaseUrl: Env.supabaseURL, supabaseAnonKey: Env.supabaseKey, needSignupInvitation: true, checkLatestVersion: false)
 
     func setupRemoteConfig() {
         let remoteConfig = RemoteConfig.remoteConfig()
@@ -34,8 +34,7 @@ final class RemoteConfigManager {
                     let supabaseAnonKey = remoteConfig.configValue(forKey: "supabase_anon_key").stringValue ?? Env.supabaseKey
                     let needSignupInvitation = remoteConfig.configValue(forKey: "need_signup_invitation").boolValue
                     let checkLatestVersion = remoteConfig.configValue(forKey: "check_latest_version").boolValue
-                    self.data = changed ? ConfigData(supabaseUrl: data.supabaseUrl, supabaseAnonKey: data.supabaseAnonKey, needSignupInvitation: data.needSignupInvitation, checkLatestVersion: checkLatestVersion) : ConfigData(supabaseUrl: supabaseUrl, supabaseAnonKey: supabaseAnonKey, needSignupInvitation: needSignupInvitation, checkLatestVersion: checkLatestVersion)
-                    print(data)
+//                    self.data = ConfigData(supabaseUrl: supabaseUrl, supabaseAnonKey: supabaseAnonKey, needSignupInvitation: needSignupInvitation, checkLatestVersion: checkLatestVersion)
                     if checkLatestVersion {
                         DispatchQueue.main.async {
                             NotificationCenter.default.post(name: .checkLatestVersion, object: nil, userInfo: ["checkLatestVersion": checkLatestVersion])

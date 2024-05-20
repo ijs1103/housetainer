@@ -7,8 +7,6 @@
 
 import Foundation
 import Supabase
-import Apollo
-import Interstyle
 import KakaoSDKAuth
 import KakaoSDKUser
 

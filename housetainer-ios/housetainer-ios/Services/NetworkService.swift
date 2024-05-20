@@ -10,7 +10,11 @@ import Foundation
 
 final class NetworkService {
     static let shared = NetworkService()
-    private let supabase = SupabaseClient(supabaseURL: RemoteConfigManager.shared.data.supabaseUrl, supabaseKey: RemoteConfigManager.shared.data.supabaseAnonKey)
+    private var supabase = SupabaseClient(supabaseURL: Env.supabaseURL, supabaseKey: Env.supabaseKey)
+    
+    func setupSupabase(_ supabase: SupabaseClient) {
+        self.supabase = supabase
+    }
     
     func insertEvent(_ event: EventDTO) async throws {
         try await supabase.database
@@ -536,6 +540,7 @@ final class NetworkService {
     }
     
     func fetchInvitation(with code: String) async -> InvitationResponse? {
+        await print("supabase.database.configuration.url", supabase.database.configuration.url)
         do {
             let res: InvitationResponse = try await supabase.database
                 .from(Table.invitations.rawValue)

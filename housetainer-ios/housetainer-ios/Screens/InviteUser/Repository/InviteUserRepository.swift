@@ -7,8 +7,6 @@
 
 import Foundation
 import Supabase
-import Apollo
-import Interstyle
 
 enum InviteUserError: Error{
     case notFound

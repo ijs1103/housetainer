@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import Apollo
-import Interstyle
 import Supabase
 
 enum UpdateNicknameError: Error{
